@@ -30,6 +30,7 @@ const navigate = useNavigate();
 
   return (
     <div>
+     <h1>Welcome to hotel booking application</h1>
       <h2>Register</h2>
       <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
       <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
