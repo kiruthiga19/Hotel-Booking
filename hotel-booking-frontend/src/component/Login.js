@@ -23,7 +23,9 @@ function Login() {
       setError(error.response?.data?.error || 'Login failed. Please check your credentials.');
     }
   };
-
+  const handleRegister = () =>{
+    navigate('/');
+  }
   return (
     <div>
       <h2>Login</h2>
@@ -31,6 +33,7 @@ function Login() {
       <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
       <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
       <button onClick={handleLogin}>Login</button>
+      <button onClick={handleRegister}>Register</button>
     </div>
   );
 }

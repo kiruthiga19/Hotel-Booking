@@ -38,7 +38,9 @@ function BookHotel() {
     <div>
       <h2>Book Hotel</h2>
       <input type="text" placeholder="Hotel Name" onChange={(e) => setHotelName(e.target.value)} required/>
+      <label>Check in</label>
       <input type="date" onChange={(e) => setCheckIn(e.target.value)} required/>
+      <label>Check out</label>
       <input type="date" onChange={(e) => setCheckOut(e.target.value)} required/>
       <button onClick={handleBooking}>Book</button>
     </div>
